@@ -12,8 +12,6 @@
 
   <button>Button</button>
 
-
-
   <h2>Przykład *ngIf, else:</h2>
 
   <p *ngIf="day === 6; else anotherDay">
@@ -22,7 +20,6 @@
   <ng-template #anotherDay>
     <p>Dzisiaj jest inny dzień niż sobota</p>
   </ng-template>
-
 
   <h2>Przykład *ngIf, then, else:</h2>
   <ng-container
@@ -39,20 +36,6 @@
     <span *ngFor="let i of [1, 2, 3, 4]">{{ i }}</span>
   </ng-container>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <h2>Przykład ngSwitch:</h2>
   <ng-container [ngSwitch]="day">
     <span *ngSwitchCase="1">Poniedziałek</span>
@@ -64,20 +47,3 @@
     <span *ngSwitchDefault>To na pewno niedziela!</span>
   </ng-container>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
