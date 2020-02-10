@@ -2,7 +2,9 @@
   <h1>Przykłady NgIf, NgSwitch</h1>
 
   <h2>NgIf vs Visibility</h2>
-  <button *ngIf="show" (click)="show = !show">NgIf Button</button>
+  <button *ngIf="show" (click)="show = !show">
+    NgIf Button
+  </button>
 
   <button #btn (click)="btn.style.visibility = 'hidden'">
     Visibility Button
@@ -11,9 +13,12 @@
   <button>Button</button>
 
 
+
   <h2>Przykład *ngIf, else:</h2>
 
-  <p *ngIf="day === 5; else anotherDay">Dzisiaj jest sobota!</p>
+  <p *ngIf="day === 6; else anotherDay">
+    Dzisiaj jest sobota!
+  </p>
   <ng-template #anotherDay>
     <p>Dzisiaj jest inny dzień niż sobota</p>
   </ng-template>
@@ -30,9 +35,22 @@
     <p>Dzisiaj nie jest sobota</p>
   </ng-template>
 
-  <ng-container *ngIf="day !== 999">
-    <span *ngFor="let i of [1,2,3,4]">{{i}}</span>
+  <ng-container *ngIf="true">
+    <span *ngFor="let i of [1, 2, 3, 4]">{{ i }}</span>
   </ng-container>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <h2>Przykład ngSwitch:</h2>
@@ -46,3 +64,20 @@
     <span *ngSwitchDefault>To na pewno niedziela!</span>
   </ng-container>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
